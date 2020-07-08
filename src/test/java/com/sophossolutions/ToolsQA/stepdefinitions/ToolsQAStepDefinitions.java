@@ -17,11 +17,15 @@ public class ToolsQAStepDefinitions {
     }
 
 
-    @When("^Selecciono el formulario$")
-    public void seleccionoElFormulario() throws InterruptedException {
-        home.click();
+    @When("^Selecciono el formulario con los datos$")
+    public void seleccionoElFormularioConLosDatos() {
+//    @When("^Selecciono el formulario con los datos \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
+//    public void seleccionoElFormularioConLosDatos(String nombre, String apellido, String correo) throws InterruptedException {
+//        home.click();
         forms.click();
-        Thread.sleep(2000);
+//        forms.escribir(nombre,apellido,correo);
+        forms.escribir();
+//        Thread.sleep(7000);
     }
 
     @Then("^Valido los datos$")

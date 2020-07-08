@@ -5,6 +5,7 @@ Feature: Registro de formulario para estudiante
 
 
   Scenario: Registro en formulario
-    Given Necesito navegar a "http://demoqa.com/"
-    When Selecciono el formulario
+    Given Necesito navegar a "http://demoqa.com/forms"
+    When Selecciono el formulario con los datos
+##    When Selecciono el formulario con los datos "Fulano","De tal","prueba@correo.com"
     Then Valido los datos
